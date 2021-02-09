@@ -12,4 +12,7 @@
 (() => {
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
     // your code here
+
+    let currentTime = new Hour();
+    console.log(currentTime);
 })();
