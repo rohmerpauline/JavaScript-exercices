@@ -11,4 +11,19 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        // your code here
+        let colorName = document.getElementById("color").value;
+        if (colorName == "red") {
+            document.body.style.backgroundColor = "red";
+        } else if (colorName == "green") {
+            document.body.style.backgroundColor = "green";
+        } else if (colorName =="yellow") {
+            document.body.style.backgroundColor = "green";
+        } else if (colorName =="blue") {
+            document.body.style.backgroundColor = "green";
+        } else {
+            alert("Please choose between red, green, yellow or blue")
+        }
+    });
 })();

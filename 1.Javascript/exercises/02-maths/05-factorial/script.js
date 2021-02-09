@@ -14,5 +14,17 @@
 
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        function factorielle(n) {
+            if (n<0) {
+                alert("Veuillez saisir un entier positif ou null");
+            } else if (n==0) {
+                return 1;
+            } else {
+                return n * factorielle(n-1);
+            }
+            }
+            factorielle(document.getElementById("number").value);
+        }
+
     });
 })();

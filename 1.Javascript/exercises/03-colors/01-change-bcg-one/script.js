@@ -10,5 +10,31 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    
+// to get the value of an input: document.getElementById("element-id").value
+const performOperation = operation => {
+    // perform the operation
+    switch(operation) {
+        case "red" :
+           document.body.style.backgroundColor = "red";
+        break;    
+        case "green" :
+            document.body.style.backgroundColor = "green";
+        break;
+        case "yellow" :
+            document.body.style.backgroundColor = "yellow";
+        break;
+        case "blue" :
+            document.body.style.backgroundColor = "blue";
+        break;
+    }
+}
+
+Array.from(document.querySelectorAll("button")).forEach($btn =>
+    $btn.addEventListener(
+        "click",
+        () => (performOperation($btn.id), false),
+    ),
+);
+    
 })();
