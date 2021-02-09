@@ -11,4 +11,6 @@
 
 (() => {
     // your code here
+    let userName = prompt("Quel est ton prénom ?");
+    alert("Bonjour, " + userName + " !");
 })();

@@ -14,5 +14,9 @@
 
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        let arrayNumber = document.getElementById("numbers").value;
+        arrayNumber.sort(function 
+        );
     });
+    alert(sortTheArray);
 })();

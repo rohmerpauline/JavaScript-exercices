@@ -11,4 +11,20 @@
 
 (() => {
     // your code here
+    
+    let userConfirmation = true;
+
+    function userData(userAge, userSexe, userCity) {
+        return userConfirmation = confirm(userAge + ", " + userSexe + ", " + userCity + " Are these information correct ?");
+    }
+    if (userConfirmation == false) {
+        userData ();          
+    }
+
+    userData(
+        prompt("How old are you ?"),
+        prompt("What's your gender ?"),
+        prompt("Where do you live ?")
+    );
+    
 })();
