@@ -24,10 +24,10 @@
         // for months after the current month and for the current month but days after the current day
     if ((month < -1) || (month == -1 && day < 0)) {
         ageReal = age-1;
-        alert(ageReal);
+        alert("Your are " + ageReal);
         // for month after the current month and the current month but days before the current day
     } else if ((month > -1) || (month == -1 && day >= 0)) {
-        alert(age);
+        alert("Your are " + age);
     }    
     });
 })();

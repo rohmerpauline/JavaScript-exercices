@@ -39,4 +39,9 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        for (let i=0; i < people.length; i++) {
+            console.log(people[i].firstname + " " + people[i].lastname);
+        }
+    });
 })();

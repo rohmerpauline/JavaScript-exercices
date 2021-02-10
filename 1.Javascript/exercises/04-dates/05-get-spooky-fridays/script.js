@@ -11,4 +11,6 @@
 
 (() => {
     // your code here
+    let date = new Date();
+    console.log(date);
 })();
