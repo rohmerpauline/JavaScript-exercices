@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /05-arrays/11-dedupe-array/script.js - 5.11: dédoublonnement d'un tableau
+ * /05-arrays/08-array-includes/script.js - 5.8: présence dans un tableau
  *
  * coded by leny@BeCode
  * started at 26/10/2018
@@ -11,21 +11,26 @@
 
 (() => {
     const fruits = [
-        "cerise",
-        "durian",
         "pomme",
         "poire",
         "fraise",
         "tomate",
+        "kiwi",
+        "banane",
         "orange",
         "mandarine",
-        "fraise",
         "durian",
         "pêche",
-        "cerise",
         "raisin",
         "cerise",
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        if (fruits.includes("pomme")) {
+            console.log("Oui pomme est dans le tableau");
+        } else {
+            console.log("Non pas de pomme ici");
+        }
+    })
 })();

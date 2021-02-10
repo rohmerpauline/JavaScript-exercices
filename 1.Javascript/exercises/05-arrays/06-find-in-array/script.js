@@ -89,6 +89,7 @@
     ];
 
     // your code here
-
+    const result = people.find(people => people.firstname == "Jean");
+    console.log(result);
    
 })();

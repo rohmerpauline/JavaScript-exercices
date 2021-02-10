@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /05-arrays/08-array-includes/script.js - 5.8: présence dans un tableau
+ * /05-arrays/11-dedupe-array/script.js - 5.11: dédoublonnement d'un tableau
  *
  * coded by leny@BeCode
  * started at 26/10/2018
@@ -11,19 +11,28 @@
 
 (() => {
     const fruits = [
+        "cerise",
+        "durian",
         "pomme",
         "poire",
         "fraise",
         "tomate",
-        "kiwi",
-        "banane",
         "orange",
         "mandarine",
+        "fraise",
         "durian",
         "pêche",
+        "cerise",
         "raisin",
         "cerise",
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+       
+        const uniqueSet = new Set(fruits);
+        const backToArray = [...uniqueSet];
+        console.log(backToArray);
+    
+    })
 })();

@@ -88,5 +88,18 @@
         },
     ];
 
+    let newArray = [];
+    document.getElementById("run").addEventListener("click", () => {
+        people.forEach(onlyAdults)
+
+        function onlyAdults(item, index) {
+            if (item.age > 18) {
+                newArray.push(item);
+               console.log(newArray);
+            }
+
+        }
+    })
+
     // your code here
 })();
