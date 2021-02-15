@@ -95,7 +95,7 @@
         function onlyAdults(item, index) {
             if (item.age > 18) {
                 newArray.push(item);
-               console.log(newArray);
+                console.log(newArray);
             }
 
         }

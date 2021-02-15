@@ -12,8 +12,24 @@
 (() => {
     class Animal {
         sayHello() {
-            return `${this.constructor.greeting}! I'm ${this.name}!`;
+            return `${this.constructor.greeting}! I'm ${this.names}!`;
         }
     }
     // your code here
+
+    class Cat = new Animal {
+        constructor(names, greeting) {
+            this.names = names;
+            this.greeting = greeting;
+        }
+    }
+
+    class Dog = new Animal {
+        constructor(names, greeting) {
+            this.names = names;
+            this.greeting = greeting;
+        }
+    }
+
+    
 })();

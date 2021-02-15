@@ -26,5 +26,14 @@
         os: "linux",
         user: null,
     };
+    
     // your code here
+
+    let availableDefault = defaultProps.available; 
+    computers.push(availableDefault);
+
+    console.log(computers);
+
+
+
 })();
