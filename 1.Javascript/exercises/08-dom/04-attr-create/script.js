@@ -11,4 +11,11 @@
 
 (() => {
     // your code here
+    let imgSource =document.getElementById("source").dataset;
+    console.log(imgSource);
+    let img = document.createElement("img");
+    img.src = imgSource;
+    document.getElementById("target").appendChild("img");
+    
+    
 })();

@@ -19,4 +19,14 @@
     ];
 
     // your code here
+    let counter = 0;
+    document.getElementById("next").addEventListener("click", function(){
+            document.getElementById("changeImage").src = gallery[counter];
+            counter++;
+            if (counter >= gallery.length) {
+                counter = 0;
+            }
+    });
+
+
 })();

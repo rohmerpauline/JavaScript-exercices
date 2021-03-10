@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /08-dom/02-select-two/script.js - 8.2: sélection par sélecteur css
+ * /08-dom/03-select-three/script.js - 8.3: sélection multiple par sélecteur css
  *
  * coded by leny@BeCode
  * started at 26/10/2018
@@ -11,4 +11,7 @@
 
 (() => {
     // your code here
+    for (let i=0; i<=5; i++) {
+        document.getElementsByClassName("target")[i].innerHTML = "owned";
+    }
 })();

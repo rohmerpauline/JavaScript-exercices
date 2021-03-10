@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+    let i = 0;
+    let textTypewrite = document.getElementById("target").textContent;
+    textTypewrite.display = "none";
+    let speed = 50;
+
+    function typewriter() {
+        if (i< textTypewrite.length) {
+            document.getElementById("target").innerHTML += textTypewrite.charAt(i);
+            i++;
+            setTimeout(textTypewrite, speed);
+        }
+    }
+
+    console.log(textTypewrite);
 })();

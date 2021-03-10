@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /08-dom/07-generate-table-one/script.js - 8.7: génération d'un tableau (1)
+ * /08-dom/02-select-two/script.js - 8.2: sélection par sélecteur css
  *
  * coded by leny@BeCode
  * started at 26/10/2018
@@ -11,4 +11,5 @@
 
 (() => {
     // your code here
+    document.getElementsByClassName("target")[0].innerHTML = "owned";
 })();
